@@ -50,7 +50,7 @@
         </table>
     
     <h3>Formulário</h3>
-    <form>
+    <form name="formProduto" method="POST" action="">
         <label for="nomeProduto">Nome:</label><br>
         <input type="text" id="nomeProduto" name="nomeProduto"><br>
 
@@ -60,6 +60,15 @@
         <label for="quantidadeProduto">Quantidade:</label><br>
         <input type="text" id="quantidadeProduto" name="quantidadeProduto"><br>
 
+        <input type=submit value="Enviar">
+
       </form>
+    
+      <?php
+        echo "Produto: " . $_POST["nomeProduto"];
+        echo "<br>Preço: " . $_POST["precoProduto"];
+        echo "<br>Quantidade: " . $_POST["quantidadeProduto"];
+     ?>
+      
 </body>
 </html>

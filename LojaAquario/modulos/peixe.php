@@ -11,7 +11,7 @@
         <table TABLE BORDER = 1>
             <tr>
             <th>Peixe</th>
-            <th>PH</th>
+            <th>pH</th>
             <th>Preço</th>
             <th>Quantidade</th>
             <th>Litragem indicada</th>
@@ -60,11 +60,11 @@
         </table>
     
     <h3>Formulário</h3>
-    <form>
+    <form name="formPeixe" method="POST" action="">
         <label for="peixe">Peixe:</label><br>
         <input type="text" id="peixe" name="peixe"><br>
 
-        <label for="phPeixe">PH indicado:</label><br>
+        <label for="phPeixe">pH indicado:</label><br>
         <input type="text" id="phPeixe" name="phPeixe"><br>
 
         <label for="precoPeixe">Preço:</label><br>
@@ -76,6 +76,17 @@
         <label for="litragem">Litragem indicada:</label><br>
         <input type="text" id="litragem" name="litragem"><br>
 
+        <input type=submit value="Enviar">
+
       </form>
+
+      <?php
+        echo "Peixe: " . $_POST["peixe"];
+        echo "<br>pH indicado: " . $_POST["phPeixe"];
+        echo "<br>Preço: " . $_POST["precoPeixe"];
+        echo "<br>Quantidade: " . $_POST["quantidadePeixe"];
+        echo "<br>Litragem indicada: " . $_POST["litragem"];
+     ?>
+
 </body>
 </html>

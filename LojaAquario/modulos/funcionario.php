@@ -59,7 +59,7 @@
         </table>
     
     <h3>Formulário</h3>
-    <form>
+    <form name="formFuncionario" method="POST" action="">
         <label for="nomeFuncionario">Nome:</label><br>
         <input type="text" id="nomeFuncionario" name="nomeFuncionario"><br>
 
@@ -71,7 +71,15 @@
 
         <label for="contatoFuncionario">Contato:</label><br>
         <input type="text" id="contatoFuncionario" name="contatoFuncionario"><br>
+        
+        <input type=submit value="Enviar">
 
       </form>
+      <?php
+        echo "Nome: " . $_POST["nomeFuncionario"];
+        echo "<br>Função: " . $_POST["funcao"];
+        echo "<br>Salario: " . $_POST["salario"];
+        echo "<br>Contato: " . $_POST["contatoFuncionario"];
+     ?>
 </body>
 </html>

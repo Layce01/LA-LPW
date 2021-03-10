@@ -60,7 +60,7 @@
         </table>
     
     <h3>Formulário</h3>
-    <form>
+    <form name="formPlanta" method="POST" action="">
         <label for="planta">Planta:</label><br>
         <input type="text" id="planta" name="planta"><br>
 
@@ -75,11 +75,22 @@
 
         <label for="dificuldade">Dificuldade:</label><br>
         <select name = "dificuldade">
+            <option>...</option>
             <option value = “facil”>Fácil </option>
             <option value = “media” >Média </option>
             <option value = “dificil”>Difícil </option>
         </select>
 
+        <input type=submit value="Enviar">
+
       </form>
+
+      <?php
+        echo "Planta: " . $_POST["planta"];
+        echo "<br>pH indicado: " . $_POST["phPlanta"];
+        echo "<br>Preço: " . $_POST["precoPlanta"];
+        echo "<br>Quantidade: " . $_POST["quantidadePlanta"];
+        echo "<br>Dificuldade: " . $_POST["dificuldade"];
+     ?>
 </body>
 </html>

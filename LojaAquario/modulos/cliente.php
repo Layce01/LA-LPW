@@ -47,14 +47,22 @@
         </table>
     
     <h3>Formulário</h3>
-    <form>
+    <form name="formCliente" method="POST" action="">
         <label for="nomeCliente">Nome:</label><br>
         <input type="text" id="nomeCliente" name="nomeCliente"><br>
 
         <label for="contatoCliente">Contato:</label><br>
         <input type="text" id="contatoCliente" name="contatoCliente"><br>
 
+        <input type=submit value="Enviar">
+
       </form>
+    
+     
+      
 </body>
 </html>
-
+ <?php
+        echo "Nome do cliente: " . $_POST["nomeCliente"];
+        echo "<br>Contato do cliente: " . $_POST["contatoCliente"];
+     ?>
