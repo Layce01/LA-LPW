@@ -88,17 +88,33 @@
         echo "<br>Litragem indicada: " . $_POST["litragem"];
 
 
-        $peixe = array();
+        $peixes = array();
 
-        $peixe[] = array("Peixe" => "Neon", "pH indicado" => 6.8, "Preço" => 2.0, "Quantidade" => 5, "Litragem indicada" => 30);
-        $peixe[] = array("Peixe" => "Guppy", "pH indicado" => 7.2, "Preço" => 1.5, "Quantidade" => 7, "Litragem indicada" => 30);
-        $peixe[] = array("Peixe" => "Platy", "pH indicado" => 7.2, "Preço" => 1.5, "Quantidade" => 15, "Litragem indicada" => 96);
+        $peixes[] = array("peixe" => "Neon", "phPeixe" => 6.8, "preco" => 2.0, "quantidade" => 5, "litragem" => 30);
+        $peixes[] = array("peixe" => "Guppy", "phPeixe" => 7.2, "preco" => 1.5, "quantidade" => 7, "litragem" => 30);
+        $peixes[] = array("peixe" => "Curviceps", "phPeixe" => 6.4, "preco" => 15.0, "quantidade" => 3, "litragem" => 63);
 
             
         echo "<pre>";
-        print_r($peixe);
+        print_r($peixes);
         echo "</pre>";
      ?>
+
+
+
+        <?php
+            foreach($peixes as $peixe){    
+        ?>
+        <tr> 
+            <td><?php echo $peixe['peixe'];?></td>
+            <td><?php echo $peixe['phPeixe'];?></td>
+            <td><?php echo $peixe['preco'];?></td>
+            <td><?php echo $peixe['quantidade'];?></td>
+            <td><?php echo $peixe['litragem'];?></td>
+        </tr>
+        <?php
+        }
+        ?>
 
 </body>
 </html>
