@@ -58,11 +58,27 @@
 
       </form>
     
-     
-      
-</body>
-</html>
- <?php
+     <?php
         echo "Nome do cliente: " . $_POST["nomeCliente"];
         echo "<br>Contato do cliente: " . $_POST["contatoCliente"];
      ?>
+      
+      <?php
+    $cliente = array();
+
+    $cliente[] = array("Nome" => "Isabel Abreu Meireles", "Contato" => "(96) 99544-3853");
+    $cliente[] = array("Nome" => "Suzana Eanes Prates", "Contato" => "(96) 94237-0814");
+    $cliente[] = array("Nome" => "Aldemir da Mota Carreira", "Contato" => "(96) 92795-6723");
+    $cliente[] = array("Nome" => "Selma Guedes Carrasco da Silva", "Contato" => "(96) 92225-8474");
+    $cliente[] = array("Nome" => "Fernando de Mascarenhas Coelho", "Contato" => "(96) 96362-2305");
+    
+    
+    echo "<pre>";
+    print_r($cliente);
+    echo "</pre>";
+
+    ?>
+</body>
+</html>
+ 
+

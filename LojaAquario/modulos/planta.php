@@ -91,6 +91,19 @@
         echo "<br>Preço: " . $_POST["precoPlanta"];
         echo "<br>Quantidade: " . $_POST["quantidadePlanta"];
         echo "<br>Dificuldade: " . $_POST["dificuldade"];
+
+        
+        $planta = array();
+
+        $planta[] = array("Planta" => "Cabomba", "pH indicado" => "6.0 - 7.5", "Preço" => 5.0, "Quantidade" => 5, "Dificuldade" => "Fácil");
+        $planta[] = array("Planta" => "Elódea", "pH indicado" => "6.0 - 7.5", "Preço" => 3.0, "Quantidade" => 7, "Dificuldade" => "Fácil");
+        $planta[] = array("Planta" => "Corymbosa", "pH indicado" => "6.0 - 7.5", "Preço" => 6.0, "Quantidade" => 12, "Dificuldade" => "Fácil");
+
+       
+            
+        echo "<pre>";
+        print_r($planta);
+        echo "</pre>";
      ?>
 </body>
 </html>

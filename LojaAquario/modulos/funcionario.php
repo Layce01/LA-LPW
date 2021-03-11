@@ -80,6 +80,17 @@
         echo "<br>Função: " . $_POST["funcao"];
         echo "<br>Salario: " . $_POST["salario"];
         echo "<br>Contato: " . $_POST["contatoFuncionario"];
-     ?>
+    
+    $funcionario = array();
+
+    $produto[] = array("Nome" => "Thiago Caiado Bento", "Função" => "Vendedor", "Salario" => 2400.0, "Contato" => "(96) 95773-6237");
+    $produto[] = array("Nome" => "Suzana Eanes Prates", "Função" => "Vendedor", "Salario" => 2400.0, "Contato" => "(96) 94237-0814");
+    $produto[] = array("Nome" => "Taíssa Faia Martinho", "Função" => "Vendedor", "Salario" => 2400.0, "Contato" => "(96) 94944-9345");
+        
+    echo "<pre>";
+    print_r($funcionario);
+    echo "</pre>";
+
+    ?>
 </body>
 </html>

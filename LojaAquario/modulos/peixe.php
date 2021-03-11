@@ -86,6 +86,18 @@
         echo "<br>Preço: " . $_POST["precoPeixe"];
         echo "<br>Quantidade: " . $_POST["quantidadePeixe"];
         echo "<br>Litragem indicada: " . $_POST["litragem"];
+
+
+        $peixe = array();
+
+        $peixe[] = array("Peixe" => "Neon", "pH indicado" => 6.8, "Preço" => 2.0, "Quantidade" => 5, "Litragem indicada" => 30);
+        $peixe[] = array("Peixe" => "Guppy", "pH indicado" => 7.2, "Preço" => 1.5, "Quantidade" => 7, "Litragem indicada" => 30);
+        $peixe[] = array("Peixe" => "Platy", "pH indicado" => 7.2, "Preço" => 1.5, "Quantidade" => 15, "Litragem indicada" => 96);
+
+            
+        echo "<pre>";
+        print_r($peixe);
+        echo "</pre>";
      ?>
 
 </body>

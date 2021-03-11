@@ -5,6 +5,8 @@
 <body>
     
     <p ALIGN=”RIGHT”>Aqui será exibido os produtos disponíveis para a venda.</p>
+
+    
     
     <h3>Lista</h3>
     
@@ -68,7 +70,21 @@
         echo "Produto: " . $_POST["nomeProduto"];
         echo "<br>Preço: " . $_POST["precoProduto"];
         echo "<br>Quantidade: " . $_POST["quantidadeProduto"];
-     ?>
+    
+    $produto = array();
+
+    $produto[] = array("Nome" => "Teste de pH", "Preço" => 15.0, "Quantidade" => 2);
+    $produto[] = array("Nome" => "Condicionador de água", "Preço" => 25.0, "Quantidade" => 5);
+    $produto[] = array("Nome" => "Filtro", "Preço" => 120.0, "Quantidade" => 3);
+    $produto[] = array("Nome" => "Rocha", "Preço" => 5.0, "Quantidade" => 16);
+    $produto[] = array("Nome" => "Areia", "Preço" => 10.0, "Quantidade" => 6);
+     
+
+    echo "<pre>";
+    print_r($produto);
+    echo "</pre>";
+
+    ?>
       
 </body>
 </html>
